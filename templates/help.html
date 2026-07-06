@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Help Desk</h2>
+<form method="post">
+    <input type="text" name="subject" placeholder="Subject" required>
+    <textarea name="message" rows="5" placeholder="Describe your issue" required></textarea>
+    <button type="submit">Submit Request</button>
+</form>
+{% endblock %}
