@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Book a Ticket</h2>
+<form method="post">
+    <input type="text" name="event_name" placeholder="Event Name" required>
+    <input type="date" name="event_date" required>
+    <input type="number" name="seats" min="1" placeholder="Number of Seats" required>
+    <button type="submit">Confirm Booking</button>
+</form>
+{% endblock %}
